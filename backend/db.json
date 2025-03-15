@@ -1,3 +1,10 @@
 {
-
+  "users": [
+    {
+      "email": "lucasgabriel.fla@hotmail.com",
+      "password": "$2a$10$HubTP/ccWxdY.pqQHAZ07urrN4F/ZkH45GXz6XYbBjbyqMo96bt/q",
+      "username": "Lucas Gabriel",
+      "id": 1
+    }
+  ]
 }

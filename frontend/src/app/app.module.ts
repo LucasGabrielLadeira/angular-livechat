@@ -15,14 +15,31 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { SignupComponent } from './view/signup/signup.component';
 import { HomeComponent } from './view/home/home.component';
-
+import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { ChatComponent } from './components/chat/chat.component';
+import { ChatKeyboardComponent } from './components/chat-keyboard/chat-keyboard.component'
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { ConversationComponent } from './components/conversation/conversation.component';
+import { PerfilCardComponent } from './components/perfil-card/perfil-card.component';
+import { ChatHeaderComponent } from './components/chat-header/chat-header.component';
+import { MessageComponent } from './components/message/message.component';
+import { UpdateUserComponent } from './view/update-user/update-user.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     SignupComponent,
-    HomeComponent
+    HomeComponent,
+    SidebarComponent,
+    ChatComponent,
+    ChatKeyboardComponent,
+    ConversationComponent,
+    PerfilCardComponent,
+    ChatHeaderComponent,
+    MessageComponent,
+    UpdateUserComponent
   ],
   imports: [
     BrowserModule,
@@ -37,6 +54,8 @@ import { HomeComponent } from './view/home/home.component';
     MatDividerModule,
     HttpClientModule,
     MatSnackBarModule,
+    MatSidenavModule,
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,20 @@
+<mat-sidenav-container>
+    <mat-sidenav class="sidebar mat-elevation-z4" mode="side" opened fixedInViewport="true">
+        <div cdkscrollable class="conversationContainer">
+            <app-conversation></app-conversation>
+            <app-conversation></app-conversation>
+            <app-conversation></app-conversation>
+            <app-conversation></app-conversation>
+            <app-conversation></app-conversation>
+            <app-conversation></app-conversation>
+            <app-conversation></app-conversation>
+            <app-conversation></app-conversation>
+            <app-conversation></app-conversation>
+            <app-conversation></app-conversation>
+        </div>
+        <app-perfil-card></app-perfil-card>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>

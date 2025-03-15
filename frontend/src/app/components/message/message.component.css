@@ -1,0 +1,11 @@
+.messageBox{
+    position: relative;
+    min-width: 13rem;
+    width: min-content;
+    max-width: 23rem;
+    background-color: #1976d2;
+    color: #FFF;
+    padding: 10px;
+    border-radius: 0px 10px 10px 10px;
+    margin: 10px 0px 0px 10px ;
+}

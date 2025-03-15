@@ -3,6 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './view/login/login.component';
 import { SignupComponent } from './view/signup/signup.component';
 import { HomeComponent } from './view/home/home.component';
+import { UpdateUserComponent } from './view/update-user/update-user.component';
+import { ChatComponent } from './components/chat/chat.component';
 
 const routes: Routes = [
   {
@@ -14,14 +16,18 @@ const routes: Routes = [
     component: SignupComponent,
   },
   {
-    path: 'home',
+    path: '',
     component: HomeComponent,
-  },
-  { 
-    path: '', 
-    redirectTo: 'login', 
-    pathMatch: 'full' 
-  },
+    children: [
+      {
+        path: 'perfil',
+        component: UpdateUserComponent
+      },{
+        path: 'chat',
+        component: ChatComponent
+      }
+    ]
+  }
 ];
 
 @NgModule({

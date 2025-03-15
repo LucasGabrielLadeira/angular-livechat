@@ -1,0 +1,29 @@
+.chatKeyboard{
+    position: fixed;
+    bottom: 0;
+    height: auto;
+}
+
+form{
+    display: flex;
+    flex-grow: 1;
+    vertical-align: middle;
+    padding: 15px;
+    gap: 30px;
+}
+
+mat-toolbar{
+    padding: 0;
+    width: calc(100% - 20rem);
+    background-color: #dbdbdb;
+}
+
+mat-form-field{
+    background-color: #fff;
+    flex-grow: 1;
+    font-size: 16px;
+}
+
+mat-label{
+    font-size: 14px;
+}
