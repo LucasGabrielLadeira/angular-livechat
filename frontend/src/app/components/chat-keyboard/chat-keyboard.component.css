@@ -1,0 +1,33 @@
+.chatKeyboard{
+    position: fixed;
+    bottom: 0;
+    height: auto;
+}
+
+form{
+    display: flex;
+    flex-grow: 1;
+    vertical-align: middle;
+    padding: 15px;
+    gap: 30px;
+}
+
+form button{
+    background-color: #007BFF;
+}
+
+mat-toolbar{
+    padding: 0;
+    width: calc(100% - 21.5rem);
+    background-color: #F2F2F2;
+}
+
+mat-form-field{
+    background-color: #fff;
+    flex-grow: 1;
+    font-size: 16px;
+}
+
+mat-label{
+    font-size: 14px;
+}

@@ -1,0 +1,22 @@
+mat-card{
+    border-radius:0px !important;
+    padding: 10px 0px;
+}
+
+mat-card-content{
+    display: flex;
+    vertical-align: middle;
+
+}
+
+p{
+    line-height: 1px !important;
+    align-self: center;
+    vertical-align: middle;
+    color: #000;
+    font-size: 16px;
+}
+
+mat-icon{
+    color: #000;
+}

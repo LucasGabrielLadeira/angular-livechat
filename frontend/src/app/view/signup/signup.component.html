@@ -1,0 +1,29 @@
+<div class="signUpContainer">
+    <mat-card>
+        <mat-card-header>
+            <p>Cadastro de Usuário</p>
+        </mat-card-header>
+        <mat-divider></mat-divider>
+        <mat-card-content>
+            <form>
+                <p>Nome</p>
+                <mat-form-field>
+                    <mat-label>Informe seu nome</mat-label>
+                    <input [(ngModel)]="credentials.username" matInput name="username">
+                </mat-form-field>
+                <p>Email</p>
+                <mat-form-field>
+                    <mat-label>Informe seu Email</mat-label>
+                    <input [(ngModel)]="credentials.email" matInput name="email">
+                </mat-form-field>
+                <p>Senha</p>
+                <mat-form-field>
+                    <mat-label>Informe sua Senha</mat-label>
+                    <input type="password" [(ngModel)]="credentials.password" matInput name="password">
+                </mat-form-field>
+            </form>
+            <button color="primary" mat-raised-button (click)="signup()">Cadastrar-se</button>
+            <p class="signup">Já possui uma conta? <a routerLink="/login">Entrar</a></p>
+        </mat-card-content>
+    </mat-card>
+</div>
